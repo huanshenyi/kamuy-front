@@ -1,6 +1,6 @@
 import { Form, Input, Button } from "antd";
 import { UserOutlined, LockFilled } from "@ant-design/icons";
-import "./login.css";
+import "./style.css";
 
 interface UserData {
   username: string;
