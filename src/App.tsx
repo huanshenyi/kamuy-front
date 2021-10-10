@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, HashRouter, Switch } from "react-router-dom";
 
-function App() {
+import LoginPage from "./Pages/Admin/Login";
+import SearveLogin from "./Pages/Servers/Login";
+import SearveHome from "./Pages/Servers/Home";
+
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HashRouter>
+        <Switch>
+          <Route path="/admin/login" exact component={LoginPage} />
+          <Route path="/searve/login" exact component={SearveLogin} />
+          <Route path="/searve/home" exact component={SearveHome} />
+        </Switch>
+      </HashRouter>
     </div>
   );
-}
-
-export default App;
+};
