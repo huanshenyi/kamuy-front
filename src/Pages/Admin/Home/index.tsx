@@ -1,8 +1,16 @@
+import {
+  UserOutlined,
+  LaptopOutlined,
+  NotificationOutlined,
+} from "@ant-design/icons";
+
 import NavHeader from "Components/NavHeader";
 import NavFooter from "Components/NavFooter";
+import SiderBar from "Components/SiderBar";
 import "./style.css";
 
-import { FooterData, FooterSubData } from "Components/NavFooter";
+import { FooterSubData } from "Components/NavFooter";
+import { Item, SubItem } from "Components/SiderBar";
 
 const linkes: FooterSubData[] = [
   {
@@ -17,10 +25,35 @@ const linkes: FooterSubData[] = [
   },
 ];
 
+const sitem: SubItem[] = [
+  {
+    key: "1",
+    title: "subitem1",
+  },
+  {
+    key: "2",
+    title: "subitem2",
+  },
+  {
+    key: "3",
+    title: "subitem3",
+  },
+];
+
+const menuItemDatas: Item[] = [
+  {
+    key: "sub1",
+    title: "sub1 title",
+    icon: UserOutlined,
+    subItem: sitem,
+  },
+];
+
 const AdminHome = () => {
   return (
     <div>
       <NavHeader title="adminHome" />
+      <SiderBar items={menuItemDatas} />
       <NavFooter title="Community" links={linkes} />
     </div>
   );

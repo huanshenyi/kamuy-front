@@ -10,7 +10,7 @@ interface HeaderData {
 const NavHeader: React.FunctionComponent<HeaderData> = (props) => {
   const { title, subTitle, extras, ...others } = props;
   return (
-    <div>
+    <div className="header">
       <PageHeader
         className="page-header"
         onBack={() => null}

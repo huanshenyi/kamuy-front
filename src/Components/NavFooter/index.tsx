@@ -30,10 +30,7 @@ const NavFooter: React.FunctionComponent<FooterData> = (props) => {
             );
           })}
         </Col>
-        <Col className="gutter-row" span={6}>
-          <div>col-6</div>
-        </Col>
-        <Col className="gutter-row" span={12}></Col>
+        <Col className="gutter-row" span={18}></Col>
       </Row>
     </div>
   );
