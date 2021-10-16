@@ -29,7 +29,7 @@ const SiderBar: React.FunctionComponent<MenuItemDatas> = (props) => {
   const { items, ...others } = props;
   return (
     <div className="page-sider-bar">
-      <Sider width={200} className="site-layout-background">
+      <Sider width={200} className="site-layout-background-sider-bar">
         <Menu
           mode="inline"
           defaultSelectedKeys={["1"]}

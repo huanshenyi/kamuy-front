@@ -1,0 +1,10 @@
+.page-content {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.site-layout-background {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}

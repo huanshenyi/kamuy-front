@@ -1,3 +1,5 @@
+import { Layout } from "antd";
+
 import {
   UserOutlined,
   LaptopOutlined,
@@ -7,6 +9,7 @@ import {
 import NavHeader from "Components/NavHeader";
 import NavFooter from "Components/NavFooter";
 import SiderBar from "Components/SiderBar";
+import PageContent from "Components/Content";
 import "./style.css";
 
 import { FooterSubData } from "Components/NavFooter";
@@ -53,7 +56,10 @@ const AdminHome = () => {
   return (
     <div>
       <NavHeader title="adminHome" />
-      <SiderBar items={menuItemDatas} />
+      <div className="content">
+        <SiderBar items={menuItemDatas} />
+        <PageContent />
+      </div>
       <NavFooter title="Community" links={linkes} />
     </div>
   );
