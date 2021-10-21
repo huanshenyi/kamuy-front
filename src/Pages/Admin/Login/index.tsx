@@ -1,6 +1,6 @@
 import { Form, Input, Button } from "antd";
 import { UserOutlined, LockFilled } from "@ant-design/icons";
-import "./style.css";
+import styles from "./style.module.css";
 
 interface UserData {
   username: string;
@@ -16,7 +16,7 @@ const LoginPage = () => {
     console.log("Failed:", errorInfo);
   };
   return (
-    <div className="login-page">
+    <div className={styles.loginPage}>
       <Form
         name="basic"
         initialValues={{ remember: true }}

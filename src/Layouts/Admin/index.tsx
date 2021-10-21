@@ -4,7 +4,7 @@ import NavHeader from "Components/NavHeader";
 import NavFooter from "Components/NavFooter";
 import SiderBar from "Components/SiderBar";
 import { Layout, Breadcrumb } from "antd";
-import "./style.css";
+import styles from "./style.module.css";
 
 import { FooterSubData } from "Components/NavFooter";
 import { Item, SubItem } from "Components/SiderBar";
@@ -53,15 +53,18 @@ class AdminLayout extends Component {
     return (
       <div>
         <NavHeader title="adminHome" />
-        <div className="content">
+        <div className={styles.content}>
           <SiderBar items={menuItemDatas} />
-          <div style={{ padding: "0 24px 24px" }} className="page-content">
+          <div
+            style={{ padding: "0 24px 24px" }}
+            className={styles.pageContent}
+          >
             <Breadcrumb style={{ margin: "16px 0" }}>
               <Breadcrumb.Item>Home</Breadcrumb.Item>
               <Breadcrumb.Item>any</Breadcrumb.Item>
             </Breadcrumb>
             <Content
-              className="site-layout-background"
+              className={styles.siteLayoutBackground}
               style={{
                 padding: 24,
                 margin: 0,

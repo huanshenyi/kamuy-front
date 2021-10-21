@@ -1,12 +1,12 @@
 .content {
   display: flex;
 }
-.page-content {
+.pageContent {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-.site-layout-background {
+.siteLayoutBackground {
   background: #fff;
   width: 100%;
   height: 100%;
