@@ -1,13 +1,13 @@
 import { UserOutlined } from "@ant-design/icons";
 
-import NavHeader from "Components/NavHeader";
-import NavFooter from "Components/NavFooter";
-import SiderBar from "Components/SiderBar";
+import NavHeader from "components/navHeader/NavHeader";
+import NavFooter from "components/navFooter/NavFooter";
+import SiderBar from "components/siderBar/SiderBar";
 import { Layout, Breadcrumb } from "antd";
 import styles from "./style.module.css";
 
-import { FooterSubData } from "Components/NavFooter";
-import { Item, SubItem } from "Components/SiderBar";
+import { FooterSubData } from "components/navFooter/NavFooter";
+import { Item, SubItem } from "components/siderBar/SiderBar";
 import React, { Component } from "react";
 const { Content } = Layout;
 

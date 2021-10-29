@@ -1,5 +1,5 @@
 import { PageHeader, Button } from "antd";
-import "./style.css";
+import styles from "./NavHeader.module.css";
 
 interface HeaderData {
   title: string;
@@ -10,9 +10,9 @@ interface HeaderData {
 const NavHeader: React.FunctionComponent<HeaderData> = (props) => {
   const { title, subTitle, extras, ...others } = props;
   return (
-    <div className="header">
+    <div className={styles.header}>
       <PageHeader
-        className="page-header"
+        className={styles["page-header"]}
         onBack={() => null}
         title={title}
         subTitle={subTitle}

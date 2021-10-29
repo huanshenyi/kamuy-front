@@ -1,12 +1,12 @@
 import { Route, HashRouter, Switch, Redirect } from "react-router-dom";
 
-import AdminLogin from "../Pages/Admin/Login";
-import AdminHome from "../Pages/Admin/Home";
-import SearveLogin from "../Pages/Servers/Login";
-import SearveHome from "../Pages/Servers/Home";
-import AdminMember from "../Pages/Admin/Member";
+import AdminLogin from "../pages/Admin/Login";
+import AdminHome from "../pages/Admin/Home";
+import SearveLogin from "../pages/Servers/Login";
+import SearveHome from "../pages/Servers/Home";
+import AdminMember from "../pages/Admin/Member";
 
-import AdminLayout from "Layouts/Admin";
+import AdminLayout from "layouts/Admin";
 
 import {
   SERVICE_HOME_PATH,
@@ -14,7 +14,7 @@ import {
   ADMIN_HOME_PATH,
   ADMIN_LOGIN_PATH,
   ADMIN_MEMBER_PATH,
-} from "Router/paths";
+} from "router/paths";
 
 export default () => {
   return (
