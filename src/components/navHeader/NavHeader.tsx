@@ -7,7 +7,7 @@ interface HeaderData {
   extras?: HTMLElement[];
 }
 
-const NavHeader: React.FunctionComponent<HeaderData> = (props) => {
+export const NavHeader: React.FunctionComponent<HeaderData> = (props) => {
   const { title, subTitle, extras, ...others } = props;
   return (
     <div className={styles.header}>
@@ -27,5 +27,3 @@ const NavHeader: React.FunctionComponent<HeaderData> = (props) => {
     </div>
   );
 };
-
-export default NavHeader;

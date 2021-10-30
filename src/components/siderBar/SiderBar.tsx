@@ -25,7 +25,7 @@ export interface SubItem {
   title: string;
 }
 
-const SiderBar: React.FunctionComponent<MenuItemDatas> = (props) => {
+export const SiderBar: React.FunctionComponent<MenuItemDatas> = (props) => {
   const { items, ...others } = props;
   return (
     <div className="page-sider-bar">
@@ -56,5 +56,3 @@ const SiderBar: React.FunctionComponent<MenuItemDatas> = (props) => {
     </div>
   );
 };
-
-export default SiderBar;

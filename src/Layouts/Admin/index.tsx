@@ -1,8 +1,6 @@
 import { UserOutlined } from "@ant-design/icons";
+import { NavFooter, NavHeader, SiderBar } from "components";
 
-import NavHeader from "components/navHeader/NavHeader";
-import NavFooter from "components/navFooter/NavFooter";
-import SiderBar from "components/siderBar/SiderBar";
 import { Layout, Breadcrumb } from "antd";
 import styles from "./style.module.css";
 

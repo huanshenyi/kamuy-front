@@ -6,7 +6,7 @@ import SearveLogin from "../pages/Servers/Login";
 import SearveHome from "../pages/Servers/Home";
 import AdminMember from "../pages/Admin/Member";
 
-import AdminLayout from "layouts/Admin";
+import AdminLayout from "layouts/admin";
 
 import {
   SERVICE_HOME_PATH,

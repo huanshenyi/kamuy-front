@@ -13,7 +13,7 @@ export interface FooterSubData {
   link: string;
 }
 
-const NavFooter: React.FunctionComponent<FooterData> = (props) => {
+export const NavFooter: React.FunctionComponent<FooterData> = (props) => {
   const { title, links } = props;
   return (
     <div className={styles["nav-footer"]}>
@@ -35,5 +35,3 @@ const NavFooter: React.FunctionComponent<FooterData> = (props) => {
     </div>
   );
 };
-
-export default NavFooter;
